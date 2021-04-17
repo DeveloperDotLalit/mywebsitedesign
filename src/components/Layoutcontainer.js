@@ -55,8 +55,8 @@ const useStyles = makeStyles((theme) => ({
     direction: 'column',
     height: '100%',
     width: '100%',
-    justify: 'center',
-    alignItems: 'center',
+    justify: 'flex-end',
+    alignItems: 'flex-end',
   },
   footerHere: {
     textAlign: 'center',
@@ -69,6 +69,14 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: (note) => {
       return green[500]
     },
+  },
+  baseContainer: {
+    justify: 'center',
+    flexGrow: 1,
+    alignItems: 'center',
+    [theme.breakpoints.down("xs")]: {
+      width: '100%',
+    }
   },
 }));
 
@@ -110,7 +118,6 @@ export default function Layoutcontainer() {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={1} xs={10} >
         <Grid container spacing={1}>
           <Grid item xs={12}>
             <Paper className={classes.titleHere}><h2>Tech News Online</h2></Paper>
@@ -180,7 +187,6 @@ export default function Layoutcontainer() {
             <Paper className={classes.footerHere}>This is going to be the Footer</Paper>
           </Grid>
         </Grid>
-      </Grid>
     </div>
   );
 }
