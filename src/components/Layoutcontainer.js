@@ -110,76 +110,77 @@ export default function Layoutcontainer() {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={1}>
-        <Grid item xs={12}>
-          <Paper className={classes.titleHere}><h2>Tech News Online</h2></Paper>
-        </Grid>
-        <Grid item xs={12}>
-          <Paper className={classes.navBarHere}>
-            <AppBar drawerOpen={drawerOpen} setDrawerOpen={setDrawerOpen}  />
-            <div>
-              <Drawer open={drawerOpen} onClose={func} anchor='right'>
-                {list()}
-              </Drawer>
-            </div>
-          </Paper>
-        </Grid>
+      <Grid container spacing={1} xs={10} >
+        <Grid container spacing={1}>
+          <Grid item xs={12}>
+            <Paper className={classes.titleHere}><h2>Tech News Online</h2></Paper>
+          </Grid>
+          <Grid item xs={12}>
+            <Paper className={classes.navBarHere}>
+              <AppBar drawerOpen={drawerOpen} setDrawerOpen={setDrawerOpen}  />
+              <div>
+                <Drawer open={drawerOpen} onClose={func} anchor='right'>
+                  {list()}
+                </Drawer>
+              </div>
+            </Paper>
+          </Grid>
 
-        <Grid item xs={12}>
+          <Grid item xs={12}>
 
-          <Grid container spacing={1} className={classes.contentContainer}>
+            <Grid container spacing={1} className={classes.contentContainer}>
 
-            <Grid item xs={9} className={classes.newsContent}>
-                <Grid container spacing={1} className={classes.newsRowOne} >
-                    <Grid item xs={6}>
-                        <Paper className={classes.paper}><h4>This is going to be the News 1</h4>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non quam eros. Donec tempus eget felis ac aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc ornare luctus justo, sit amet tincidunt arcu ornare ac. Sed cursus suscipit mi ultricies sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non quam eros. Sed cursus suscipit mi ultricies sodales.
-                        </Paper>
-                    </Grid>
-                    <Grid item xs={6}>
-                        <Paper className={classes.paper}><h4>This is going to be the News 2</h4>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non quam eros. Donec tempus eget felis ac aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc ornare luctus justo, sit amet tincidunt arcu ornare ac. Sed cursus suscipit mi ultricies sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non quam eros. Sed cursus suscipit mi ultricies sodales.
-                        </Paper>
-                    </Grid>
-                    </Grid>
-                    <Grid container spacing={1} className={classes.newsRowTwo}>
-                    <Grid item xs={6}>
-                        <Paper className={classes.paper}><h4>This is going to be the News 3</h4>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non quam eros. Donec tempus eget felis ac aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc ornare luctus justo, sit amet tincidunt arcu ornare ac. Sed cursus suscipit mi ultricies sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non quam eros. Sed cursus suscipit mi ultricies sodales.
-                        </Paper>
-                    </Grid>
-                    <Grid item xs={6}>
-                        <Paper className={classes.paper}><h4>This is going to be the News 4</h4>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non quam eros. Donec tempus eget felis ac aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc ornare luctus justo, sit amet tincidunt arcu ornare ac. Sed cursus suscipit mi ultricies sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non quam eros. Sed cursus suscipit mi ultricies sodales.
-                        </Paper>
-                    </Grid>
-                </Grid>
-            </Grid>
+              <Grid item xs={9} className={classes.newsContent}>
+                  <Grid container spacing={1} className={classes.newsRowOne} >
+                      <Grid item xs={6}>
+                          <Paper className={classes.paper}><h4>This is going to be the News 1</h4>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non quam eros. Donec tempus eget felis ac aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc ornare luctus justo, sit amet tincidunt arcu ornare ac. Sed cursus suscipit mi ultricies sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non quam eros. Sed cursus suscipit mi ultricies sodales.
+                          </Paper>
+                      </Grid>
+                      <Grid item xs={6}>
+                          <Paper className={classes.paper}><h4>This is going to be the News 2</h4>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non quam eros. Donec tempus eget felis ac aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc ornare luctus justo, sit amet tincidunt arcu ornare ac. Sed cursus suscipit mi ultricies sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non quam eros. Sed cursus suscipit mi ultricies sodales.
+                          </Paper>
+                      </Grid>
+                      </Grid>
+                      <Grid container spacing={1} className={classes.newsRowTwo}>
+                      <Grid item xs={6}>
+                          <Paper className={classes.paper}><h4>This is going to be the News 3</h4>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non quam eros. Donec tempus eget felis ac aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc ornare luctus justo, sit amet tincidunt arcu ornare ac. Sed cursus suscipit mi ultricies sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non quam eros. Sed cursus suscipit mi ultricies sodales.
+                          </Paper>
+                      </Grid>
+                      <Grid item xs={6}>
+                          <Paper className={classes.paper}><h4>This is going to be the News 4</h4>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non quam eros. Donec tempus eget felis ac aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc ornare luctus justo, sit amet tincidunt arcu ornare ac. Sed cursus suscipit mi ultricies sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non quam eros. Sed cursus suscipit mi ultricies sodales.
+                          </Paper>
+                      </Grid>
+                  </Grid>
+              </Grid>
 
-            <Grid item xs={3}>
-            
-                <Grid container spacing={1} className={classes.referenceContent}>
-                    <Grid item >
-                        <Paper className={classes.paper}>This is going to be the content Block for <h5>www.learnwithengineers.com</h5></Paper>
-                    </Grid>
-                    <Grid item >
-                        <Paper className={classes.paper}>This is going to be the reference block for <h5>techipedia.learnwithengineers.com</h5></Paper>
-                    </Grid>
-                    <Grid item >
-                        <Paper className={classes.paper}>This is going to be the reference block for <h5>tools.learnwithengineers.com</h5></Paper>
-                    </Grid>
-                    <Grid item >
-                        <Paper className={classes.paper}>This is going to be the reference block for <h5>Mini Ads</h5></Paper>
-                    </Grid>
-                </Grid>
+              <Grid item xs={3}>
+              
+                  <Grid container spacing={1} className={classes.referenceContent}>
+                      <Grid item >
+                          <Paper className={classes.paper}>This is going to be the content Block for <h5>www.learnwithengineers.com</h5></Paper>
+                      </Grid>
+                      <Grid item >
+                          <Paper className={classes.paper}>This is going to be the reference block for <h5>techipedia.learnwithengineers.com</h5></Paper>
+                      </Grid>
+                      <Grid item >
+                          <Paper className={classes.paper}>This is going to be the reference block for <h5>tools.learnwithengineers.com</h5></Paper>
+                      </Grid>
+                      <Grid item >
+                          <Paper className={classes.paper}>This is going to be the reference block for <h5>Mini Ads</h5></Paper>
+                      </Grid>
+                  </Grid>
+              </Grid>
             </Grid>
           </Grid>
-        </Grid>
-        <Grid item xs={12}>
-          <Paper className={classes.footerHere}>This is going to be the Footer</Paper>
+          <Grid item xs={12}>
+            <Paper className={classes.footerHere}>This is going to be the Footer</Paper>
+          </Grid>
         </Grid>
       </Grid>
-      
     </div>
   );
 }
